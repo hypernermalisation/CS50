@@ -3,7 +3,7 @@
 
 int main(void)
 {
-    float owed;
+    double owed;
     int quarters = 0;
     int dimes = 0;
     int nickels = 0;
