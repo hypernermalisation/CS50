@@ -6,14 +6,11 @@ int main(void)
     int height;
 
     // Input for amount of how high to build the pyramid
-    printf("Provide a height between 1-23\n");
     do {
-        printf("Height: ");
+        printf("Provide a height between 1-23\n");
         height = get_int();
     }
-    while(height < 0 || height > 23);
-
-
+    while(height < 0 || height >= 24);
 
     for (int row = 0; row < height; row++)
     {
@@ -35,10 +32,7 @@ int main(void)
         {
             printf("#");
         }
-                for (int spaces = height - row; spaces > 1; spaces--)
-        {
-            printf(" ");
-        }
+
         printf("\n");
     }
 }
