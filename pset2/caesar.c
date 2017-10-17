@@ -30,11 +30,13 @@ int main(int argc, string argv[])
             // Get ascii value for alpha character
             int ascii = (int) plaintext[i];
 
+            // ascii starting value for upper case is 65
             if isupper(plaintext[i])
             {
                 int cipher = (((ascii - 65 + key) % 26) + 65);
                 printf("%c", (char) cipher);
             }
+            // ascii starting value for lower case is 97
             if islower(plaintext[i])
             {
                 int cipher = (((ascii - 97 + key) % 26) + 97);
